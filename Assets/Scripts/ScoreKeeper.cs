@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreKeep : MonoBehaviour {
+public class ScoreKeeper : MonoBehaviour {
 
     private int score;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,10 +16,10 @@ public class ScoreKeep : MonoBehaviour {
 		
 	}
 
-    void OnCollisionEnter(Collision collision)
+    public void IncrementScore(int amt)
     {
-        score += 1;
-        print(score);
+        score += amt;
+        print("total score is: " + score);
     }
 
 }
