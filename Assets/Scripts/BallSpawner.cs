@@ -25,9 +25,10 @@ public class BallSpawner : MonoBehaviour {
             gl_dir = getDirection();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Fire1"))
         {
             GameObject instance = Instantiate(ballPrefab);
+            instance.transform.position = transform.position;
             Rigidbody rb = instance.GetComponent<Rigidbody>();
             setBallVelocity(rb, gl_dir);
         }
