@@ -8,8 +8,6 @@ public class LevelManager : MonoBehaviour {
     public float timeUntilNextLevel = 0.0f;
 	// Use this for initialization
 	void Start () {
-        
-
 	}
 
     // Update is called once per frame
@@ -22,7 +20,6 @@ public class LevelManager : MonoBehaviour {
             {
                 LoadNextScene();
             }
-
         }
     }
 

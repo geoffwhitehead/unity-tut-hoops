@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour {
 
-    private int score;
+    public int score;
 
 	// Use this for initialization
 	void Start () {
