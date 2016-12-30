@@ -7,7 +7,6 @@ public class GameOverScoreDisplay : MonoBehaviour {
     Text text;
     ScoreAbsorber sa;
 
-
     // Use this for initialization
     void Start () {
         text = GetComponent<Text>();
