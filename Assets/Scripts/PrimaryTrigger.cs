@@ -6,7 +6,6 @@ public class PrimaryTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        print("triger entered" + other);
         GetComponentInChildren<SecondaryTrigger>().ExpectCollider(other);
     }
 }

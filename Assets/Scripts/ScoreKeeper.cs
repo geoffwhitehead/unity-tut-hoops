@@ -19,7 +19,7 @@ public class ScoreKeeper : MonoBehaviour {
     public void IncrementScore(int amt)
     {
         score += amt;
-        print("total score is: " + score);
+        GetComponent<AudioSource>().Play();
     }
 
 }
